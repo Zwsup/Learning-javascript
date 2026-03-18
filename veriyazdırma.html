@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p id="test"></p>
     <script>
         // en basit veri yazdırma yöntemi
         alert("Merhaba Dünya");
@@ -18,7 +18,7 @@
         
 
         //document write ile veri yazdırma
-        document.write("Deneme yazısı");
+        document.write("Deneme yazısı <br>");
 
         // değişken ile yazdırma
         var isim="arda";
@@ -31,6 +31,10 @@
         var arda="arda";
         console.log(arda);
         
+
+        // en karmaşık veri yazdırma örneği
+        document.getElementById("test").innerHTML=ad;
+        document.getElementById("test").innerHTML="Kemal Arda Girgin";
     </script>
     
 </body>
