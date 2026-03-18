@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //Number(veri), Parantez içindeki veriyi sayısal değere dönüştürür.
+
+        //String(veri), Parantez içindeki veriyi sözel değere dönüştürür.
+
+        //Boolean(veri), Verinin Boolean tipine dönüştürülmesini saplar. Sıfırdan büyük tüm değerler ve metinler true: boş,sıfır ve daha küçük değerler ile null ve undefined değerleri false veritipine dönüştürülür.
+
+        //Date(veri), Verinin Date(tarih) tipine dönüştürülmesini sağlar
+
+
+        //Number() Kullanımı
+
+        //Ekrandan alınan iki sayının toplamı
+
+        var sayi1=prompt("bir sayı giriniz"); //3
+        var sayi2=prompt("bir sayı daha giriniz"); //5
+
+        var sonuc = sayi1+sayi2;
+        alert(sonuc);
+
+        //ÇIKTI
+        //35
+        
+
+        //Buradaki sorun sözel toplama yapılması, konsoldan veya formdan alınan bütün değerler "String"tir,
+
+        //Böyle bir hata almamak için "Number()" Fonksiyonunu kullanmamız lazım.
+
+        var sayi1=prompt("Bir sayı giriniz");
+        var sayi2=prompt("Bir sayı daha giriniz");
+
+        sayi1 = Number(sayi1); //3
+        sayi2 = Number(sayi2); //5
+
+        var sonuc = sayi1+sayi2;
+        alert(sonuc);
+         
+        //ÇIKTI
+        //8
+    </script>
+    
+</body>
+</html>
