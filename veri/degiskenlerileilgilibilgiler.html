@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Değişkenler ile ilgili bazı bilgiler
+
+        //Herhangi bir javascript değişkenine değer atanmadıysa değişken değeri "undefined" olarak görünür.
+
+        var d;
+        document.write(d);
+        //ÇIKTI:
+        // Undefined
+
+
+        //Sözel verilerin değişkenlere atanması tek veya çift tırnakla yapılabilir.
+
+        var ad="arda";
+        var soyad='girgin';
+        document.write(ad+" "+soyad);
+
+        //ÇIKTI:
+        // arda girgin
+
+
+        //Bilgi!!!
+        //document.write("<br>"); alt satıra gidilmesini sağlar
+
+
+        //Çift tırnak içinde tek tırnak, tek tırnak içinde çift tırnak kullanabiliriz.
+
+        var cumle = 'ona" en iyi yazılımcı derlerdi" buraların en iyisiydi';
+
+        //ÇIKTI
+        // ona en iyi yazılımcı derlerdi buraların en iyisiydi
+
+
+        //Bir değişkene hem sayısal hem de sözel değişken atarsanız "Sözel Toplama" yapılır.
+
+        var x=5+"arda";
+        document.write(x);
+        //ÇIKTI
+        //5arda
+
+        //Javascript değişkenlerine atanan ifadeler soldan sağa doğru çalışır eğer değişkene atanan ilk 2 ifade Number, Üçüncü ifade String ise sonuç gene String olur ama ilk iki sayısal değere sayısal işlem yapılır.
+
+        var y =3+5+"arda";
+        //ÇIKTI
+        //35arda
+    </script>
+    
+</body>
+</html>
