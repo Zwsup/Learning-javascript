@@ -1,0 +1,1 @@
+I'm posting my JavaScript code here to keep track of my progress in this repository
