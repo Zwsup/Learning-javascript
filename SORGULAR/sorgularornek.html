@@ -8,7 +8,19 @@
 <body>
 
     <script>
-        
+        //Örnek 1
+        //Sadece pozitif sayıların karesini alan program.
+
+        var sayi,kare;
+        sayi=Number(prompt("sayı giriniz"));
+        if(sayi<0){
+            alert("sayı negatif");
+            alert("sayfayı yenileyin");
+        }
+        else {
+            kare = sayi*sayi;
+            alert("Girdiğiniz sayının karesi="+kare);
+        }
     </script>
     
 </body>
