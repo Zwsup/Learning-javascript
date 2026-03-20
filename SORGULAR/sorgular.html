@@ -79,6 +79,8 @@
 
         //if else örnek 2
 
+        //kullanıcıdan alınan yaş 18'den küçükse veli onayı gerekmektedir yazan değilse iyi eğlenceler yazan program.
+
         var yas;
         yas=Number(prompt("yaşınız: "));
         if(yas<18){
@@ -92,7 +94,21 @@
             document.write("iyi eğlenceler");
         }
         
+        //if else örnek 3
 
+        // vize ve final notunun ortalamasını alan 50'den küçükse kaldı değilse geçti yazan program.
+
+        var vize,final,ortalama;
+        vize=Number(prompt("Vize notunuz:"));
+        final=Number(prompt("Final notunuz: "));
+        ortalama=(vize+final)/2;
+
+        if(ortalama<50){
+            document.write("Kaldınız");
+        }
+        else{
+            document.write("Geçtiniz");
+        }
         
     </script>
     
