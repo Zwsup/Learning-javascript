@@ -109,6 +109,53 @@
         else{
             document.write("Geçtiniz");
         }
+
+
+
+
+        //else if komutu
+
+        //Bu komut iç içe geçmiş "if-else" yapılarından oluşur, yani; birden fazla şart sorgulanır.
+
+        // else if komutunun syntax'ı şu şekildedir.
+
+        //if(şart){
+        //işlem1;
+        //}
+        //else if(şart2){
+        //işlem2;
+        //}
+        //else if(şart3){
+        //işlem3;
+        //}
+        //else{
+        //işlem4;
+        //}
+
+        //else if örnek
+
+        //Öğrencinin aldığı 0-100 arası nota göre başarı durumu tespit edilsin.
+
+        var not1,not2,not3,ortalama;
+
+        not1=Number(prompt("1.Notunuz: "));
+        not2=Number(prompt("2.Notunuz: "));
+        not3=Number(prompt("3.Notunuz: "));
+
+        ortalama=(not1+not2+not3)/3;
+
+        if(ortalama<50){
+            alert("kaldınız");
+        }
+        else if(ortalama<=65){
+            alert("orta");
+        }
+        else if(ortalama<=80){
+            alert("iyi");
+        }
+        else{
+            alert("pekiyi");
+        }
         
     </script>
     
