@@ -93,7 +93,28 @@
             alert("Geçtiniz");
         }
 
-        
+
+
+        //Örnek 6
+        // iki vize ortalamasının %40'ı ile final notunun %60'ı 50'den küçükse kaldı değilse geçti yazan program
+        //ZOR ÖRNEK
+
+        var vnot1,vnot2,fnot,vortalama,ykirk,fort,finaal;
+        vnot1=Number(prompt("1.vize notunuzu giriniz"));
+        vnot2=Number(prompt("2.vize notunuzu giriniz"));
+        fnot=Number(prompt("Final notunuzu girin"));
+
+        vortalama=(vnot1+vnot2)/2; // ortalama
+        ykirk=(vortalama/100)*40; // yüzde 40
+        fort=(fnot/100)*60; // yüzde 60
+        finaal=fort+ykirk;
+
+        if(finaal<50){
+            alert("Kaldınız");
+        }
+        else{
+            alert("Gçeti");
+        }
     </script>
     
 </body>
