@@ -21,6 +21,25 @@
             kare = sayi*sayi;
             alert("Girdiğiniz sayının karesi="+kare);
         }
+
+
+        //Örnek 2
+        //Dairenin alanı ve çevresi
+
+        var r,alan,cevre;
+        var pi=3.14;
+
+        r = Number(prompt("Yarıçap giriniz"));
+        
+        if(r<0){
+            alert("yarıçap negatif!");
+            alert("sayfayı yenileyin");
+        }
+        else{
+            alan = pi*r*r;
+            cevre= 2*pi*r;
+            alert("Alan="+alan+"<br>"+"Çevre="+cevre);
+        }
     </script>
     
 </body>
