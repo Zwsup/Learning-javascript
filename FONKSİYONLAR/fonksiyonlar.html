@@ -8,7 +8,89 @@
 <body>
     
     <script>
+        //Fonksiyonlar
+
+        //Ana program tarafından gerektiğinde çağırılıp çalıştıırlan program parçacıklarına fonksiyon denir.
+
+        //Program içerisinde bazı işlemleri sık sık yapıyorsanız her işlem için kod yazmak yerine bu kodu bir defa yazar ve fonksiyon olarak kaydederiz. Daha sonra da gerektiğinde bu kodları/fonksiyonları çağırıp çalıştırırız.
+
+        //Fonksiyon nasıl oluşturulur.
+
+        //function fonksiyon_adı(varsa parametreler){
+        //
+        //kodlar;
+        //}
+
+
+        //Fonksiyon nasıl çalıştırılır/çağırılır ? 
+
+        //Fonksiyonlar iki şekilde çalışır.
+
+        //1- Kodlara yazılarak
+
+        //2- Bir olayla tetiklenerek
+
+        //<input type="button" value="tıkla" onclick="merhaba()">
+
         
+
+
+
+        //Fonksiyon çeşitleri
+
+        //Değer döndürmeyen fonksiyonlar
+
+        //Parametresiz
+        //Tek Parametreli
+        //Çok Parametreli
+
+
+        //Değer döndüren fonksiyonlar
+
+        //Parametresiz
+        //Tek Parametreli
+        //Çok Parametreli
+
+
+
+
+
+        //Değer Döndürmeyen Fonksiyonlar
+
+        //Bu tür fonksiyonlar ana program tarafından çağırılarak çalıştırılır fakat ana program bir değer göndermezler/döndürmezler. O nedenle bu tür fonksiyonlara "değer döndürmeyen fonksiyon" denir.
+
+        function merhaba()
+        {
+            document.write("Merhaba");
+        }
+        merhaba();
+
+
+
+        //Tek Parametreli Değer Döndürmeyen Fonksiyonlar
+
+        //Parametre fonksiyona ana program tarafından gönderilen değerdir. Fonksiyon ana programdan gelen değeri alarak bir değişken gibi kullanabilir.
+
+        function merhabaa(ad)
+        {
+            document.write("Merhaba "+ad+" Nasılsın?");
+        }
+        merhaba("ali");
+
+
+        
+
+
+        //Çok Parametreli Değer Döndürmeyen Fonksiyonlar
+
+        //Bu fonksiyonda ana programdan iki değer gönderilir. Gönderilen değerleri toplar ve ekrana yazar. Ana programa her hangi bir değer döndürmez.
+
+        function topla(s1,s2)
+        {
+            var topla=s1+s2;
+            alert("Toplam="+topla);
+        }
+        topla(3,5); //fonksiyonu çağır.
     </script>
     
 </body>
