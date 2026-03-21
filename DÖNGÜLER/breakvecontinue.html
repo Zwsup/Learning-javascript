@@ -8,7 +8,52 @@
 <body>
 
     <script>
+        //Break ve Contiune
+
+        //Break ve Continue döngülerin akışını kontrol etmek için kullanılır.
+
+        //Break döngüyü sonlandırır.
+
+        //Continue döngüde belirli şarta uyan adımın atlanmasını sağlar.
+
+        //Break örnek
+
+        var toplam = 0;
+        for(var s=1;s<=5;s++){
+            if(s<=3){
+                break;
+            }
+
+            document.write("Sayaç="+s+"<br>");
+            toplam = toplam+s;
+        }
+        document.write("Toplam="+toplam);
+
+
+
+        //Contine örnek
+
+        var toplam=0;
+        for(var s=1;s<=5;s++){
+            if(s==3){
+                continue;
+            }
+            toplam=toplam+s;
+            document.write("Sayaç="+s+"<br>");
+        }
+        document.write("Toplam="+toplam);
+
+
+        //Çıktı
+
+        //sayaç=1
+        //sayaç=2
+        //sayaç=4       //3-> continue ile atlandı.
+        //sayaç=5
+        //toplam=12
         
+
+
     </script>
     
 </body>
