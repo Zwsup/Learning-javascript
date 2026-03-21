@@ -98,7 +98,7 @@
         document.write("Toplam="+toplam);
 
 
-        //Döngüler örnek 7
+        //Döngüler örnek 8
         //1'den n kadar sayıların toplamı.
 
         var s=1,n,toplam=0;
@@ -110,6 +110,20 @@
             s++;
         }
         document.write("Toplam"+toplam);
+
+        
+
+        //Döngüler örneği 9
+        //Ekrandan alınan N adet sayının ortalaması.
+
+        var s,n,toplam=0,ort=0;
+
+        n = Number(prompt("Bir sayı giriniz"));
+        for(s=1;s<=n;s++){
+            toplam=toplam+s;
+        }
+        ort=toplam/n;
+        document.write("Ortalama="+ort);
 
         
     </script>
