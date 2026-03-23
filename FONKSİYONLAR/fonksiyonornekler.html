@@ -105,7 +105,26 @@
         y=Number(prompt("Bir sayı daha giriniz"));
 
         yazarmısın(x,y);
+
+
+
+        //1'den n'e kadar olan sayıların toplamı;
+        //Örnek 7
         
+        function ntopla(x){
+            var toplam=0;
+            for(var s=1;s<=x;s++){
+                toplam=toplam+s;
+            }
+            return toplam;
+        }
+
+        var x;
+
+        x = Number(prompt("Bir sayı giriniz"));
+        document.write("n="+n+" toplam="+ntopla(x));
+
+
     </script>
     
 </body>
