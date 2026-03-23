@@ -9,6 +9,7 @@
 
     <script>
         // Yazdırma Fonksiyonu
+        //Örnek 1
 
         function yaz(deger){
             document.write(deger+"<br>");
@@ -21,7 +22,22 @@
         var yas = 22;
         yaz(yas);
 
-        
+
+        //N defa merhaba yazdırma
+        //Örnek 2
+
+        function merhaba(){
+            document.write("merhaba <br>");
+        }
+
+        var s,n;
+
+        n = Number(prompt("Bir sayı giriniz"));
+        for(s=0;s<=n;s++)
+        {
+            merhaba();
+        }
+
     </script>
     
 </body>
