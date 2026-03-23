@@ -110,7 +110,7 @@
 
         //1'den n'e kadar olan sayıların toplamı;
         //Örnek 7
-        
+
         function ntopla(x){
             var toplam=0;
             for(var s=1;s<=x;s++){
@@ -125,6 +125,25 @@
         document.write("n="+n+" toplam="+ntopla(x));
 
 
+
+
+        //N faktöriyel
+        //Örnek 8
+
+        function f(x){
+            var g=1;
+            for(var s=0;s<=x;s++){
+                g=g*s;
+            }
+            return g;
+        }
+
+        var n;
+        n=Number(prompt("Bir sayı giriniz"));
+        document.write("Girdiğiniz sayının faktöriyeli="+f(n));
+
+
+        
     </script>
     
 </body>
