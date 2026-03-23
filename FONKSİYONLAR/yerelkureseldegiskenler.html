@@ -8,7 +8,34 @@
 <body>
 
     <script>
-        
+        //Değişken Ömrü ve Kapsamı
+
+        //Bir blok içind etanımlanan bir değişken sadece o blok içinde kullanılabilir.
+
+        //Bir  bloğun içindeki komutlar çalıştıktan sonra o blok içinde tanımlanan değişkenler bellekten silinir.
+
+        //Eğer bu değişkenleri başka bir blok içinde de kullanırsanız hatalı sonuç elde edersiniz.
+
+
+        //Küresel (Global) Değişkenler
+
+        //Eğer bir değişkenin diğer bloklar tarafından kullanılmasını istiyorsanız bu değişkeni "Küresel" (global) olarak tanımlamalısınız.
+
+        //"Yerel" değişkenler içinde bulundukları bloğun kodları çalıştıktan sonra bellekten silinirken "Küresel" değişkenler bellekten ancak program sonlandığnda silinir.
+
+        var a=1,b=2;  //Küresel değişken
+        function topla(){
+            var toplam = 0;     //Yerel değişken
+            toplam = a+b;
+            alert("Toplam="+toplam);
+        }
+
+        function carp(){
+            var carpma=a;       //Yerel değişken
+            carpma=a*b;
+            alert("Çarpım="+carpma);
+        }
+        carp();
     </script>
     
 </body>
