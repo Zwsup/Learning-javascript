@@ -34,6 +34,38 @@
         document.write("<br>");
         document.write("Çevre="+d1.cevre());
 
+
+
+
+
+
+
+
+
+
+        //Ucgen sınıfı ve uygulaması
+        //örnek 2
+
+        class Ucgen{
+            static genislik = 0;
+            static yukseklik = 0;
+
+
+            alan(){
+                return(this.genislik*this.yukseklik)/2;
+            }
+        }
+
+
+        var u1 = new Ucgen();
+        u1.genislik = Number(prompt("Genişlik giriniz:"));
+        u1.yukseklik = Number(prompt("Yükseklik giriniz"));
+
+        document.write("Üçgenin alanı="+u1.alan());
+
+
+        
+
     </script>
     
 </body>
