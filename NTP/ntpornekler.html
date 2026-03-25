@@ -8,7 +8,32 @@
 <body>
 
     <script>
-        
+        //Daire sınıfı ve uygulaması
+        //Örnek 1
+
+        class Daire{
+            constructor(yaricap){
+                this.yaricap = this.yaricap;
+            }
+
+
+            alan(){
+                return 3.14*this.yaricap*this.yaricap;
+            }
+
+
+            cevre(){
+                return 2*3.14*this.yaricap;
+            }
+        }
+
+
+        var r = Number(prompt("Yarıçap giriniz:"));
+        var d1 = new Daire(r);
+        document.write("Alan="+d1.alan());
+        document.write("<br>");
+        document.write("Çevre="+d1.cevre());
+
     </script>
     
 </body>
