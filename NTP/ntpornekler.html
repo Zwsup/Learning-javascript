@@ -46,22 +46,22 @@
         //Ucgen sınıfı ve uygulaması
         //örnek 2
 
-        // class Ucgen{
-        //     static genislik = 0;
-        //     static yukseklik = 0;
+        class Ucgen{
+            static genislik = 0;
+            static yukseklik = 0;
 
 
-        //     alan(){
-        //         return(this.genislik*this.yukseklik)/2;
-        //     }
-        // }
+            alan(){
+                return(this.genislik*this.yukseklik)/2;
+            }
+        }
 
 
-        // var u1 = new Ucgen();
-        // u1.genislik = Number(prompt("Genişlik giriniz:"));
-        // u1.yukseklik = Number(prompt("Yükseklik giriniz"));
+        var u1 = new Ucgen();
+        u1.genislik = Number(prompt("Genişlik giriniz:"));
+        u1.yukseklik = Number(prompt("Yükseklik giriniz"));
 
-        // document.write("Üçgenin alanı="+u1.alan());
+        document.write("Üçgenin alanı="+u1.alan());
 
 
         
@@ -75,29 +75,29 @@
         //örnek 3
 
 
-        // class Dikdörtgen{
-        //     static genislik=0;
-        //     static yukseklik=0;
+        class Dikdörtgen{
+            static genislik=0;
+            static yukseklik=0;
 
 
-        //     alan(){
-        //         return this.genislik*this.yukseklik;
-        //     }
+            alan(){
+                return this.genislik*this.yukseklik;
+            }
 
-        //     cevre(){
-        //         return (this.genislik*this.yukseklik)*2;
-        //     }
+            cevre(){
+                return (this.genislik*this.yukseklik)*2;
+            }
 
             
-        // }
+        }
 
 
-        // var r = new Dikdörtgen();
-        // r.genislik = Number(prompt("Genişlik giriniz"));
-        // r.yukseklik = Number(prompt("Yükseklik giriniz"));
-        // document.write("Dikdörtgenin Alanı="+r.alan());
-        // document.write("<br>");
-        // document.write("Dikdörtgenin Çevresi="+r.cevre());
+        var r = new Dikdörtgen();
+        r.genislik = Number(prompt("Genişlik giriniz"));
+        r.yukseklik = Number(prompt("Yükseklik giriniz"));
+        document.write("Dikdörtgenin Alanı="+r.alan());
+        document.write("<br>");
+        document.write("Dikdörtgenin Çevresi="+r.cevre());
     </script>
     
 </body>
