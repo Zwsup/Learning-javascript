@@ -2,3 +2,7 @@ I'm posting my JavaScript code here to keep track of my progress in this reposit
 
 I am using html to write javascript codes.
 
+Why am I using html to practise Javascript ?
+
+Because if i use document.write("Hello World"); in html an error occurs.
+
