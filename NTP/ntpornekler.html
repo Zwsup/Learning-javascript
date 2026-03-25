@@ -13,7 +13,7 @@
 
         class Daire{
             constructor(yaricap){
-                this.yaricap = this.yaricap;
+                this.yaricap = yaricap;
             }
 
 
@@ -28,9 +28,8 @@
         }
 
 
-        
-        var d1 = new Daire();
-        d1.yaricap = Number(prompt("Yarıçap giriniz:"));
+        var r = Number(prompt("Yarıçap giriniz:"));
+        var d1 = new Daire(r);
         document.write("Alan="+d1.alan());
         document.write("<br>");
         document.write("Çevre="+d1.cevre());
