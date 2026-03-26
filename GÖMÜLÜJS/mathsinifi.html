@@ -25,7 +25,39 @@
         //Math.random()         0-1 arası rastgele ondalıklı sayı üretir.
         //Math.PI               pi(3.14...) sayısı.
         //Math.E                e(2.718...) sayısı.
-        
+
+
+
+
+
+
+
+        //örnek 1
+
+        document.write("pi="+Math.PI+"<br>");
+        document.write("e="+Math.E+"<br>");
+        document.write("kök="+Math.sqrt(9)+"<br>");
+        document.write("kare="+Math.pow(2,3)+"<br>");
+        document.write("küp="+Math.pow(2,3)+"<br>");
+        document.write("maks="+Math.max(1,2,3)+"<br>");
+        document.write("min="+Math.min(1,2,3)+"<br>");
+        document.write("yuvarla="+Math.round(4.6)+"<br>");
+        document.write("küçük tamsayıya yuvarla="+Math.floor(4.6)+"<br>");
+        document.write("büyük tamsayıya yuvarla="+Math.ceil(4.6)+"<br>");
+        document.write("Rastgele="+Math.random()+"<br>");
+
+
+        //örnek 2
+        //daire alan ve çevresini math sınıfı ile bulma
+
+        var r = Number(prompt("Yarıçap:"));
+        var alan = Math.PI*Math.pow(r,2);
+        var cevre = 2*Math.PI*r;
+        document.write("Alan="+alan+"<br>");
+        document.write("Çevre="+cevre+"<br>");
+
+
+
     </script>
     
 </body>
