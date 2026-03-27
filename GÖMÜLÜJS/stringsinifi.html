@@ -21,6 +21,37 @@
         //metin.search(x)           belirtilen metni arar ve bulunan pozisyonu döndürür.
         //metin.substring(x,y)      x. ile y. karakterli döndür.
     
+
+
+        var ad = "Arda";
+        document.write(ad.length+"<br>");
+        document.write(ad.toUpperCase()+"<br>");
+        document.write(ad.toLowerCase()+"<br>");
+        document.write(ad.bold()+"<br>");
+        document.write(ad.italics()+"<br>");
+        document.write(ad.charAt(2)+"<br>");
+        document.write(ad.strike()+"<br>");
+        document.write(ad.substring(1,3)+"<br>");
+
+
+        //Örnek 1
+        //Length komutu ile dikey bir şekilde isim yazdırma
+
+        var isim = "arda";
+        var uzunluk = isim.length;
+        for(var i=0; i<uzunluk; i++){
+            document.write(isim.charAt(i)+"<br>");
+        }
+
+
+        //Örnek 2
+        //kullanıcıdan alınan isimi lenght komutu ile alt alta yazdırma.
+
+        var adam=prompt("isminiz:");
+        var uzzunluk=adam.length;
+        for(var i=0; i<uzzunluk; i++){
+            document.write(adam.charAt(i)+"<br>");
+        }
     
     </script>
     
