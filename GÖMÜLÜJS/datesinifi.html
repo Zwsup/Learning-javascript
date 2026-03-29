@@ -126,7 +126,29 @@
 
         tarih.setHours(8);
 
-        
+
+
+
+
+        //Örnek
+
+        var tarihh = new Date();
+        document.write(tarihh+"<br>");
+        document.write(tarihh.toLocaleDateString()+"<br>");
+
+
+        //Örnek
+
+        //gg.aa.yyyy.ss:dd biçiminde tarih saat yazdırma
+
+        var tarihhh = new Date();
+        var gun = tarihhh.getDate();
+        var ay = tarihhh.getMonth();
+        var yil = tarihhh.getFullYear();
+        var saat = tarihhh.getHours();
+        var dakika = tarihhh.getMinutes();
+
+        document.write("Tarih:"+gun+"/"+(ay+1)+"/"+yil+"/"+saat+":"+dakika);
     </script>
     
 </body>
