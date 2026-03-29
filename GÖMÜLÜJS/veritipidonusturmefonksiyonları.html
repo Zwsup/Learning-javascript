@@ -9,7 +9,92 @@
 
 
     <script>
-        
+        //Veri Tipi Dönüştürme Fonksiyonları
+
+        //Number&String Gömülü Fonksiyonları
+
+        //Number() Formlardan veya mesaj kutularından okunan String tipindeki değerleri Number veri tipine dönüştürmek için kullanılır.
+
+        //Örnek
+
+        var x = 12;
+        x=Number(x);
+        //12
+
+
+
+
+        //String() Metne dönüştürür.
+
+        //Örnek
+
+        var x=2;
+        x=String(x);
+        //"2"
+
+
+
+
+
+        //ParseFloat() Kesirli değer döndürür. Formlardan veya mesaj kutularından okunan String tipindeki Değerleri Number veri tipine dönüştürmek için kullanılır.
+
+
+        //Örnek 
+
+        var y = "1.243";
+        y =parseFloat(y)
+        //1.243
+
+
+
+        //ParseInt() Tamsayı değer döndürür. Formlardan veya mesaj kutularından okunan String tipindeki değerleri Number veri tipine dönüştürmek için kullanılır.
+
+        //Örnek
+
+        var y ="1.243";
+        y = parseInt(y)
+        //1
+
+
+
+
+
+
+
+        //Fonksiyonların kullanımı ve döndürdüğü değerler.
+
+        var a=12.345;
+        document.write(typeof(a)+"<br>");
+        document.write(a+"<br>");
+        a=String(a);
+
+        var b="String";
+        document.write(typeof(b)+"<br>");
+        document.write(b+"<br>");
+        b=Number(b);
+
+        var c=1.23;
+        document.write(typeof(c)+"<br>");
+        document.write(c+"<br>");
+        c=parseFloat(c);
+
+        var d=1.23;
+        document.write(typeof(d)+"<br>");
+        document.write(d+"<br>");
+        d=parseInt(d);
+
+        document.write("<br>");
+
+        document.write(typeof(a)+"<br>");
+        document.write(typeof(b)+"<br>");
+        document.write(typeof(c)+"<br>");
+        document.write(typeof(d)+"<br>");
+
+
+        document.write(a+"<br>");
+        document.write(b+"<br>");
+        document.write(c+"<br>");
+        document.write(d+"<br>");
     </script>
     
 </body>
