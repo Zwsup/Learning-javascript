@@ -22,6 +22,111 @@
         //Moment.js
         //Date.js
         //XDate
+
+
+        //Date sınıfının Özellikler ve Metotları.
+
+        //getTime(); 1 Ocak 1970 tarihinden bugüne kadar milisaniye cinsinden geçen zamanı döndürür.
+
+        //örnek
+
+        var tarih = new Date("July 7, 1972 08:30:00");
+        alert(tarih.getTime());
+
+
+        //getDate(); Ayın gününü döndürür (1-31)
+
+        //örnek
+
+        alert(tarih.getDate());
+
+        //7
+
+
+        //getDay(); haftanın gününü döndürür.(0-6). Haftanın ilk günü Pazar kabul edilir.
+
+        //Örnek
+
+        alert(tarih.getDay());
+
+        //6
+
+
+        //getMonth(); yılın ayını döndürür (0-11)
+
+        //Örnek
+
+        alert(tarih.getMonth());
+
+        //6
+
+
+        //getHours(); Günün saatini döndürür (0-23)
+
+        //Örnek
+
+        alert(tarih.getHours());
+
+        //8
+
+        
+        //getMinutes(); Saatin dakikasını döndürür (0-59)
+        
+        //Örnek
+
+        alert(tarih.getMinutes());
+
+        //30
+
+
+        //getSeconds(); Tarihin saniyesini döndürür (0-59)
+
+        //Örnek
+
+        alert(tarih.getSeconds());
+
+        //0
+
+
+        //getTimezoneOffset(); Yerel saatin Greenwich'e (GMT)  göre dakika cinsinden farkını döndürür.
+
+
+
+        //toLocateString(); Tarihi yerel formatta gösterir.
+
+        //Örnek
+
+        tarih.toLocaleString();
+
+
+        //setDate() Ayın gününü ayarlar (0-31)
+
+        //Örnek
+
+        tarih.setDate(7);
+
+
+        //setMonth() Tarihin ayını ayarlar(0-11)
+
+        //Örnek
+
+        tarih.setMonth(6);
+
+        
+        //setFullYear() tarihin yılını ayarlar.
+
+        //Örnek
+
+        tarih.setFullYear(1982);
+
+
+        //setHours() Tarihin saatini ayarlar (0-23)
+
+        //Örnek
+
+        tarih.setHours(8);
+
+        
     </script>
     
 </body>
