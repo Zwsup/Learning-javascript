@@ -180,6 +180,30 @@
         }
 
 
+
+
+        //Örnek
+
+        //Ekrandan alınan 5 dizi elemanının ortalamasını bulma:
+
+
+        var dizitoplami=0, ortalama=0;
+        var dizii = new Array(5);
+
+        for(var i=0; i<5; i++){
+            dizii[i]=Number(prompt(i+". sayıyı giriniz:"));
+        }
+
+        for(var i=0; i<5; i++){
+            dizitoplami=dizitoplami+dizii[i];
+        }
+
+        ortalama=dizitoplami/5;
+
+        document.write(dizi+"<br>");
+        document.write("dizi ortalaması="+ortalama);
+
+
     </script>
     
 </body>
