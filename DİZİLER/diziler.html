@@ -116,6 +116,52 @@
         document.write(hafta_gunleri[6]+"<br>");
 
 
+
+
+        //örnek 
+
+
+        //arkadas isimli dizi tanımlayıp elemanlarını yazdırma
+
+        var arkadasslar=["Yusuf","Ömer","Serhat"];
+
+        document.write(arkadasslar);
+
+
+
+
+        //örnek 
+
+        //Ekrandan alınan dizi elemanlarını yazdırma
+
+        var adamlar = new Array(3);
+        adamlar[0]=prompt("bir isim giriniz");
+        adamlar[1]=prompt("bir isim daha giriniz");         //uzun yol
+        adamlar[2]=prompt("bir isim daha giriniz");
+
+
+        document.write(adamlar);
+
+
+
+        //kısa yol
+
+        var adammlar = new Array(3);
+
+        for(var i=0; i<3; i++){
+            adammlar[i]=prompt(i+".adam:");
+        }
+        document.write(adammlar);
+
+
+        //alt alta yazdırma
+
+
+        for(var i=0; i<=2; i++){
+            document.write(adammlar[i]+"<br>");
+        }
+
+
     </script>
     
 </body>
