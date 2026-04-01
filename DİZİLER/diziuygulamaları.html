@@ -40,9 +40,31 @@
         var n=Number(prompt("Eleman sayısını belirleyiniz(sayı giriniz)"));
 
         for(var i=0; i<n; i++){
+            dizii[i]=Number(prompt(i+" indisli eleman"));
+        }
+        document.write(dizii)
+
+
+
+        //Örnek 3
+        //N adet sayının ortalaması
+
+        var diziii = new Array();
+
+        var n=Number(prompt("Eleman sayısını belirleyiniz(sayı giriniz)"));
+
+        for(var i=0; i<n; i++){
             dizi[i]=Number(prompt(i+" indisli eleman"));
         }
-        document.write(dizi)
+        var toplam=0; ort=0;
+
+        for(var i=0; i<n; i++){
+            toplam=toplam+dizi[i];
+        }
+
+        ort=toplam/n;
+
+        document.write("ortalama="+ort);
 
         
 
