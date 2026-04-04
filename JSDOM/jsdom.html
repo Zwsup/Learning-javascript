@@ -105,7 +105,64 @@
         var x = document.querySelectorAll("p.intro");
 
 
+
+
+
+
+
+
+
+
+
+        //HTML Komutlarının içeriğini değiştirmek
+
+        //HTML komutlarının içeriğini veya özelliğini değiştirmek için aşağıdaki yöntemler kullanılabilir.
+
+        //-komut.innerHTML = içerik
+        //-komut.özellik = deger
+        //-komut.setAttribute(özellik,deger)
+        //-komut.style.property = yeni_stil
+
+
+
+
         
+
+        //Örnek
+
+
+        //ID özelliği test olan komutun içeriğine x değişkenini ata.
+        var x = "deneme";
+        document.getElementById(test).innerHTML=x;
+
+
+
+        //ID Özelliği "header" olan komutu "komut" değişkenine ait. Daha sonra da "komut" değişkeninin içeriğine "yeni içerik" değerini ata.
+
+        var komut = document.getElementById("header");
+        komut.innerHTML = "yeni içerik";
+
+
+
+        //ID Değeri resim olan nesnenin "src" özelliğini "Flama.jpg" yap. Böylece bir resmi kodla değiştirmiş oluruz.
+
+        //<img id="resim" src="bayrak.gif">
+        //<script>
+        //document.getElementById("resim").src = "flama.jpg";
+        //<script>
+
+
+
+        
+        //ID özelliğini "p2" olan komutun "color" özelliğini(rengini) "blue" yap.
+
+        //<p id ="p2"> Merhaba Dünya ! </p>
+        //<script>
+        //document.getElementById("p2").style.color = "blue";
+        //<script>
+
+
+            
         
         
 
