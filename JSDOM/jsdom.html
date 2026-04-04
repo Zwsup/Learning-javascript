@@ -21,6 +21,56 @@
         //-HTML komutlarının özelliklerinin değiştirilmesi.
         //-CSS Kodlarının değişitirilmesi.
         //-HTML olaylarının tetiklenmesi.
+
+
+        // Document Nesnesi;
+
+        // Document nesnesi tarayıcıdaki HTML sayfasını temsil eder.
+
+        // Document nesnesini kullanarak sayfadaki resim veya form elemanı (buton, metin kutusu, onay kutusu) gibi tüm nesnelere erişebiliriz.
+
+        // Bu nedenle "document" nesnesi en çok kullanılan Javascript nesnelerinden biridir.
+
+        // Document Nesnesinin Özellik ve Metotları
+
+        // Özellik/Metot                            Açıklama
+        //
+        //document.write()                       sayfaya yaz.
+        //document.writeln()                     sayfaya yaz ve alt satıra git.
+        //document.getElementById(id)            Id numarasını kullanarak nesneyi seç.
+        //document.getElementByName(name)        Elemanın name özelliğini kullanarak seç.
+        //document.getElementsByTagName(tag)     Tag kullanarak seç.
+        //document.URL                           Aktif sayfanın adresi.
+        //document.referrer                      Aktif sayfaya hangi adresten gelindiğini döndürür.
+        //document.title                         Sayfa başlığı.
+        //document.width                         Sayfa genişliği.
+        //document.height                        Sayfa yüksekliği.
+        //document.characterSet                  HTML Sayfasının karakter seti. UTF-8 veya Windows-1254.
+        //document.domain                        Alan adını döndürür.
+        //document.forms[]                       Sayfadaki form elemanlarına ulaşmamızı sağlayan dizi.
+        //document.images[]                      Sayfadaki resimlere ulaşmamızı sağlayan dizi.
+        //document.lastModified                  Sayfanın son güncellenme tarihi.
+        
+        
+
+
+        //Sıklıkla Kullanılanlar
+
+
+        document.write("sayfa adresi="+document.URL);
+        document.write("<br>");
+        document.write("gelinen sayfa="+document.referrer);
+        document.write("<br>");
+        document.write("Sayfanın Title'ı="+document.title);
+        document.write("<br>");
+        document.write("sayfa genişliği="+document.documentElement.clientWidth);
+        document.write("<br>");
+        document.write("sayfa yüksekliği="+document.documentElement.clientHeight);
+        document.write("<br>");
+        document.write("karakter seti="+document.characterSet);
+        document.write("<br>");
+        document.write("son güncellenme tarihi="+document.lastModified);
+
     </script>
     
 </body>
