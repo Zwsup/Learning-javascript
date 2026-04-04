@@ -71,6 +71,45 @@
         document.write("<br>");
         document.write("son güncellenme tarihi="+document.lastModified);
 
+
+
+
+
+
+
+        //JS ile HTML Komutlarının Seçimi
+
+        //HTML komutlarının seçimi için aşağıdaki yöntemler kullanılabilir.
+
+        //-document.getElementById(id)              ID Özelliği ile seçilir.
+        //-document.getElementByTagName(name)       Tag adına göre seçilir.
+        //-document.getElementByClassName(name)     Class adına göre seçilir.
+
+
+
+        //Örnek
+
+        //Tüm p taglarını / komutlarını bul seç;
+        document.getElementsByName("p");
+
+        //Önce Id değeri "main" olan elemanı seç, daha sonra da onun içindeki p taglarını seç.
+        var x = document.getElementById("main");
+        var y = x.getElementsByTagName("p");
+
+
+        //Sınıf / Class adlı "intro" olan komutu seç ve x değişkenine ata
+        var x = document.getElementsByClassName("intro");
+
+
+        //CSS Seçici ile komut seçmek için kullanılır. Class özelliği "intro" olan paragrafları seç.
+        var x = document.querySelectorAll("p.intro");
+
+
+        
+        
+        
+
+        
     </script>
     
 </body>
