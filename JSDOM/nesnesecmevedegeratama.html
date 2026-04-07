@@ -12,6 +12,9 @@
     <p id="ilk"></p>
     <p id="ikinci"></p>
 
+
+    <img src="example1.jpg" id="resim1" onmouseover="foto1" onmouseout="foto2">
+
     <script>
 
         //içerik değiştirme
@@ -24,7 +27,20 @@
         document.getElementById("manset").style.backgroundColor="black";
         document.getElementById("manset").style.fontFamily="Helvetica";
 
-        
+
+        //özellik değiştirme
+        var resim1 = document.getElementById("resim1");
+
+
+        function foto1(){
+            resim1.src="example2.jpg";
+        }
+
+        function foto2(){
+            resim1.src="example1.jpg";
+        }
+
+
 
     </script>
     
