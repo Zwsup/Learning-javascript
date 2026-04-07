@@ -6,10 +6,41 @@
     <title>Document</title>
 </head>
 
+<h2>Linkler</h2>
+<a href="documentdizileri.html">Anasayfa</a> |
+<a href="documentdizileri.html">Tekrar Anasayfa</a>
+<h2>Resimler</h2>
+<img src="example1.jpg">
+<br>
+<img src="example2.jpg">
+<h2>Formlar</h2>
+
+    <form name="test">
+        İsim <input type="text"> <br>
+        Soyad <input type="text"> <br>
+        Yaş <input type="number"> <br>
+        <input type="button" onclick="yaz()" value="gönder">
+        <input type="reset" value="sıfırla">
+    </form>
 
 <body>
 
     <script>
+
+        document.write("link sayısı="+document.links.length+"<br>");
+        document.write("resim sayısı="+document.images.length+"<br>");
+        document.write("form sayısı="+document.forms.length+"<br>");
+        document.write("form eleman sayısı"+document.forms["test"].length+"<br>");
+
+        yaz();
+
+        function yaz(){
+            var test = document.forms["test"];
+
+            for(var i=0; i<test.length; i++){
+                document.write(test.elements[i].value+"<br>");
+            }
+        }
         
     </script>
     
