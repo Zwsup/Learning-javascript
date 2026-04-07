@@ -7,8 +7,27 @@
 </head>
 <body>
 
+    <h1 id="manset">İlk Manşet</h1>
+
+    <p id="ilk"></p>
+    <p id="ikinci"></p>
+
     <script>
+
+        //içerik değiştirme
+        document.getElementById("manset").innerHTML="Son manşet";
+        document.getElementById("ilk").innerHTML="<b> ilk paragraf </b>";       //renderlanır
+        document.getElementById("ikinci").innerText="<i> ikinci paragraf </i>"; //renderlanmaz
+
+        //görselleştirme
+        document.getElementById("manset").style.color="red";
+        document.getElementById("manset").style.backgroundColor="black";
+        document.getElementById("manset").style.fontFamily="Helvetica"
+
+
         
+        
+
     </script>
     
 </body>
