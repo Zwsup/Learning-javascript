@@ -8,8 +8,46 @@
 <body>
 
     <script>
-        
+        //Window nesnesi:
+
+        //Window nesnesi hiyerarşinin en üstündeki nesnedir.
+
+        //Document, screen ,location ,History ve Navigator nesneleri Window nesnesinin altında/içinde yer alır.
+
+        //Window nesnesinin Özellik ve metotları.
+
+        //Özellik / Metot               //Açıklama
+        //window.name                   Pencereye bir isim verir.
+        //window.innerHeight            Pencere yüksekliğini döndürür.
+        //window.innerWidth             Pencere genişlğini döndürür.
+        //window.outerHeight            Menü ve diğer çubuklar dahil tarayıcının toplam yüksekliğini döndürür.
+        //window.outerWidth             Menü ve diğer çubuklar dahil tarayıcının toplam genişliğini döndürür.
+        //window.alert()                Mesaj kutusunu çalıştırır ve bir ileti gösterilmesini sağlar.
+        //window.prompt()               Veri almak için kullanılır.
+        //window.print()                Sayfayı yazdırır.
+        //window.open(URL)              Belirtilen URL adresi için bir pencere/sekme açar
+        //window.close()                Aktif pencereyi kapatır.
+        //window.confirm()              Onay kutusunu çalıştırır. Tamam düğmesine tıklanırsa "true" iptal düğmesine basılırsa "false"
+        //                              döndürür.
+        //window.focus()                Farenin açık veya open() metodu ile açılan pencereye odaklanmasını sağlanır.
+        //window.setInterval()          Bir fonksiyonun veya kodun belirtilen süre sonunda tekrarlı olarak çalışmasını sağlar.
+        //window.clearInterval()        setInterval() metodunu iptal eder.
+        //window.setTimeout()           Bir fonksiyonun veya kodun belirtilen süre sonunda sadece bir defa çalışmasını sağlar.
+        //window.clearTimeout()         Set Timeout() metodunu iptal eder.
+        //window.blur()                 Farenin odaklanmasını iptal eder.
+
+
+
+
+        // örnek 1
+        //Window Nesnesi ile Bağlantı Açmak
+        function pencere(){
+            open("windownesnesi.html","_blank","height=300,width=300");
+        }
+
     </script>
     
+    <!-- örnek 1 -->
+    <input type="button" value="Aç" onclick="pencere()">
 </body>
 </html>
