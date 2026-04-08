@@ -8,8 +8,21 @@
 <body>
     
     <script>
-        
+        //History Nesnesi;
+
+        //Tarayıcının gezdiği adresleri saklar. Adresler arasında ileri geri gitmemizi sağlar.
+
+        function ileri(){
+            history.forward();
+        }
+
+        function geri(){
+            history.back();
+        }
     </script>
+
+    <button onclick="ileri()">İleri</button>
+    <button onclick="geri()">Geri</button>
 
 </body>
 </html>
