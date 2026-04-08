@@ -9,7 +9,45 @@
 
     <script>
         //HTML Olayları (Eventhandler)
+
+        //HTML DOM kullanarak belirli olaylar meydana geldiğinde belirli komutların çalışmasını sağlayabiliriz.
+
+        //Örneğin, fare ile bir butona tıklandığında (click olayı) belli bir fonksiyonun çalışmasını sağlayabiliriz.
+
+        //Ya da sayfa açıldığında (onload olayı) belirli kodların otomatik olarak çalışmasını sağlayabiliriz.
+
+        
+        
+        
+        //Olay                  //Açıklama
+        //onload                Sayfanın yüklenmesi/açılması bittiğinde "onload" olayı meydana gelir.                  
+        //onunload              Sayfanın kapanması.                  
+        //onresize              Sayfa boyutu değiştiğinde.                  
+        //onerror               Sayfada bir Javascript hatası olduğunda.
+        //onfocus               Bir form elemanı aktif olduğunda.
+        //onblur                Bir form elemanı pasif olduğunda.
+        //onchange              Form elemanının değeri değiştiğinde.
+        //onsubmit              Form onaylandığında.
+        //onreset               Form reset edildiğinde.
+        //oninvalid             Forma girilen eleman geçerli değilse.
+        //oninput               Forma veri girilirse.
+        //onclick               Bir elemana tıklandığında.
+        //ondblclick            Bir elemana çift tıklandığında.
+        //ondrag                Bir eleman sürüklendiğinde.
+        //onmouseover           Bir elemanın üzerine fare geldiğinde.
+        //onmouseout            Bir elemanın üzerinden fare kalktığında.
+
+
+
+        //Örnek 1
+        //onclick() olayı ile fonksiyon çalıştırma.
+        function tik(){
+            alert("merhaba");
+        }
+        
     </script>
+    <!-- örnek 1 -->
+    <input type="button" onclick="tik()" value="Tıkla">
     
 </body>
 </html>
