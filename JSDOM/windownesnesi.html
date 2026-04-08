@@ -56,9 +56,34 @@
 
         setTimeout(zaman ,5000);
 
+
+
+
+
+        //Örnek 3
+        //SetInterval ile Periyodik kod çalıştırma
+
+        //Bazı durumlarda belirli kodların belirli aralıklarla çalıştırılması gerekir.
+
+        //Bu tür durumlarda "SetInterval" metodu kullanılır. Örneğin kronometredeki değerin her 1000ms'de 1 artması gerekir.
+
+        var i=0;
+
+        function sayı(){
+            document.getElementById("kutu").innerHTML=i;
+
+            i++;
+
+        }
+
+        setInterval(sayı, 1000);
+
     </script>
     
     <!-- örnek 1 -->
     <input type="button" value="Aç" onclick="pencere()">
+
+    <!-- örnek 2 -->
+    <div id="kutu"></div>
 </body>
 </html>
