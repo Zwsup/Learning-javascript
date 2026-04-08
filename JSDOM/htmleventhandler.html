@@ -54,6 +54,24 @@
         //onclick() olayı ve "this" nesnesi
 
 
+
+        //HTML olayları ile Nesnelere Değer atama
+
+        //butona tıklandığında ID Değeri "demo" olan paragrafın içeriğine "tarih" yazdırılır.
+
+        //Örnek 4
+
+        function tarih(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+
+        //Farklı versiyonu
+        //var an = new Date();
+        //var yil = an.getFullYear();
+        //var ay = an.getMonth()+1;
+        //var gun = an.getDate();
+        //var Tarih = "Tarih"+gun+"/"+ay+"/"+yil;
+        //document.getElementById("demo").innerHTML = Tarih;
         
     </script>
     <!-- örnek 1 -->
@@ -66,5 +84,11 @@
 
     <!-- örnek 3 -->
     <h1 onclick="this.innerHTML='Merhaba'">Buraya Tıkla</h1>
+
+
+    <!-- örnek 4 -->
+    <p>Tarihi görmek için tıkla</p>
+    <button onclick="tarih()">Tarih ne ?</button>
+    <p id="demo"></p>
 </body>
 </html>
