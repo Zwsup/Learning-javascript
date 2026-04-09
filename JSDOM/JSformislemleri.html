@@ -9,7 +9,38 @@
 
     <script>
         //Javascript Form İşlemleri:
+
+        //Formlarda Fonksiyon Kullanımı:
+
+        //Javascript'in en çok kullanıldığı alanlardan biri, kullanıcıdan form elemanları vasıtasıyla alınan verilerin geçerliliğini kontrol ederek gerekli işlemleri yapmaktır.
+
+        //Örneğin:
+        //Metin kutusuna değer girilmiş mi ? Yoksa boş mu bırakılmış ?
+        //Girilen değer sayısal mı? Sözel mi ? Tarih veya saat mi ?
+        //Email veya web adresi uygun biçimde mi ?
+        //Sayısal değer uygun aralıkta mı ? 
+
+
+        //HTML Formlarındaki verilerin alınıp işlenmesinde genellikle fonksiyonlar kullanılmaktadır.
+
+        //Fonksiyonları iki şekilde çalıştırabilirsiniz.
+
+        //"Kodların arasına yazarak":Javascript komutları yukarıdan başlayarak aşağı doğru sırayla çalıştırılır. Çalıştırmak istediğiniz fonksiyonunun adını yazarak herhangi bir fonksiyonun çalışmasını sağlayabilirsiniz.
+
+        //"Bir olay ile tetikleyerek":Belirli bir olay gerçekleştiğinde belli bir Javscript fonksiyonunun çalışmasını sağlayabiliriz. Örneğin, fare bir fotoğrafın üzerine geldiğinde veya fareyle bir butona tıklandığında belirli bir fonksiyonun çalışmasını sağlayabiliriz.
+
+        //Örnek
+        //Bir düğmeye tıklayarak belli bir fonksiyonu çalıştırabiliriz.
+        function merhaba(){
+            document.write("Merhaba");
+        }
+
     </script>
+
+        <!-- Örnek -->
+        <input type="button" value="Merhaba" onclick="merhaba()">
+
+        
     
 </body>
 </html>
