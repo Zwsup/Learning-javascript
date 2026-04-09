@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //HTML Formdan Veri Okuma
+
+        //Web sayfalarının en önemli özelliği ziyaretçilerden veri alabilmesi ve bu verilere göre anında işlem yapabilmesidir. Bu sayede ziyaretçilerle etkileşim kurabilmekte, e-ticaret ve sosyal medya gibi uygulamalar geliştiribilmektedir.
+
+        //HTML Formlarındaki veriyi almak için "document.getElementById("eleman").value" komutu kullanılır.
+
+        //Bu komut web sayfası (document) içindeki bir kimliğe (ID) sahip HTML form elemanını (Element) seçip değerini (value) alır.
+
+        
+
+        //Örnek 1
+        //HTML Formundan veri okumak
+        function yazi(){
+            var ad = document.getElementById("ad").value;
+            alert("Adınız="+ad);
+        }
+
+
+    </script>
+
+    <!-- örnek 1 -->
+
+    Ad <input type="text" id="ad"> <br>
+    <input type="button" value="OK" onclick="yazi()">
+
+    
+</body>
+</html>
