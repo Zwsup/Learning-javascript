@@ -38,6 +38,19 @@
         }
 
 
+        //Örnek 3
+        //Formdan alınan iki sayının toplamı
+        function topla(){
+            var sayi1,sayi2,toplam;
+
+            sayi1=Number(document.getElementById("sayi1").value);
+            sayi2=Number(document.getElementById("sayi2").value);
+            toplam=sayi1+sayi2;
+            document.getElementById("sonuc").innerHTML="Girdiğiniz iki sayının toplamı="+toplam;
+
+        }
+
+
     </script>
 
     <!-- örnek 1 -->
@@ -58,6 +71,16 @@
      <div id="text2"></div>
 
 
-    
+     <br>
+     <br>
+
+    <!-- örnek 3 -->
+     <form>
+        1.Sayı <input type="number" id="sayi1"> <br>
+        2.Sayı <input type="number" id="sayi2"> <br>
+        <input type="button" value="Topla" onclick="topla()">
+     </form>
+
+     <div id="sonuc"></div>
 </body>
 </html>
