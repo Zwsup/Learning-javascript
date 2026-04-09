@@ -74,6 +74,38 @@
         }
 
 
+        //Örnek 5
+        //Girilen sayının karesi Çok kontrollü
+
+        function hessapla(){
+            var sayi, kare;
+            sayi = Number(document.getElementById("sayikare").value);
+            kare = sayi*sayi;
+
+
+            if(sayi==""){
+                alert("Lütfen bir sayı giriniz");
+                document.getElementById("sayikare").style.backgroundColor="red";
+                document.getElementById("sayikare").focus();
+            }
+            else if(sayi <=0){
+                alert("Lütfen pozitif bir sayı giriniz");
+                document.getElementById("sayikare").style.backgroundColor="red";
+                document.getElementById("sayikare").focus();
+            }
+            else if(sayi >=100){
+                alert("Lütfen 100'den küçük bir sayı giriniz");
+                document.getElementById("sayikare").style.backgroundColor="red";
+                document.getElementById("sayikare").focus();
+            }
+            else{
+                kare = sayi*sayi;
+                document.getElementById("sonucal").innerHTML="Girdiğiniz sayının karesi="+kare;
+                document.getElementById("sayikare").style.backgroundColor="yellow";
+            }
+        }
+
+
 
     </script>
 
@@ -111,9 +143,20 @@
      <br>
      <!-- örnek 4 -->
       <form>
-        Sayı <input type="text" id="karesayi">
+        Sayı <input type="text" id="karesayi"> <br>
         <input type="button" value="Hesapla"  onclick="hesapla()">
       </form>
       <div id="karesonuc"></div>
+
+
+      <!-- örnek 5 -->
+       <br>
+       <br>
+
+      <form>
+        Sayı <input type="text" id="sayikare"> <br>
+        <input type="button" value="Hesaplarmısın" onclick="hessapla()">
+      </form>
+      <div id="sonucal"></div>
 </body>
 </html>
