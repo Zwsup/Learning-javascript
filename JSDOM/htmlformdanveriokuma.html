@@ -26,12 +26,37 @@
         }
 
 
+        //Örnek 2
+        //Formdan alınan sayının karesi
+        function kare(){
+            var sayi, kare;
+
+            sayi = document.getElementById("sayi").value;
+            kare = sayi * sayi
+            document.getElementById("text").innerHTML="Girdiğiniz sayı="+sayi;
+            document.getElementById("text2").innerHTML="Girdiğiniz sayının karesi="+kare;
+        }
+
+
     </script>
 
     <!-- örnek 1 -->
-
+    <form>
     Ad <input type="text" id="ad"> <br>
     <input type="button" value="OK" onclick="yazi()">
+    </form>
+    <br>
+    <br>
+
+    <!-- örnek 2 -->
+     <form>
+        Sayı <input type="number" id="sayi"> <br>
+        <input type="button" value="gönder" onclick="kare()">
+     </form>
+
+     <div id="text"></div>
+     <div id="text2"></div>
+
 
     
 </body>
