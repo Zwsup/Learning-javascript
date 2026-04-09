@@ -51,6 +51,30 @@
         }
 
 
+        //Örnek 4
+        //Formdan alınan sayının karesi ama kontrol yapılarak
+        function hesapla(){
+            var sayi, kare;
+            sayi = Number(document.getElementById("karesayi").value);
+            
+
+            if(sayi==""){
+                alert("Lütfen bir sayı giriniz");
+            }
+            else if(sayi <=0){
+                alert("Lütfen pozitif bir sayı giriniz");
+            }
+            else if(sayi >=100){
+                alert("Lütfen 100'den küçük bir sayı giriniz");
+            }
+            else{
+                kare = sayi*sayi;
+                document.getElementById("karesonuc").innerHTML="Girdiğiniz sayının karesi="+kare;
+            }
+        }
+
+
+
     </script>
 
     <!-- örnek 1 -->
@@ -82,5 +106,14 @@
      </form>
 
      <div id="sonuc"></div>
+
+     <br>
+     <br>
+     <!-- örnek 4 -->
+      <form>
+        Sayı <input type="text" id="karesayi">
+        <input type="button" value="Hesapla"  onclick="hesapla()">
+      </form>
+      <div id="karesonuc"></div>
 </body>
 </html>
