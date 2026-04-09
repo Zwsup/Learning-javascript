@@ -105,7 +105,20 @@
             }
         }
 
+        //örnek 6
+        //ID değeri "ad" olan metin kutusunun içeriği boş ise "lütfen adınızı giriniz" yazan mesaj kutusu
 
+        function isim(){
+            var isim;
+            isim = document.getElementById("add").value;
+
+            if(isim ==""){
+                alert("Lütfen isiminizi giriniz");
+            }
+            else{
+                document.getElementById("issim").innerHTML="İsminiz="+isim;
+            }
+        }
 
     </script>
 
@@ -158,5 +171,15 @@
         <input type="button" value="Hesaplarmısın" onclick="hessapla()">
       </form>
       <div id="sonucal"></div>
+
+      <br>
+      <br>
+
+      <!-- örnek 6 -->
+       <form>
+        İsim <input type="text" id="add"> <br>
+        <input type="button" value="Gönder" onclick="isim()">
+       </form>
+       <div id="issim"></div>
 </body>
 </html>
