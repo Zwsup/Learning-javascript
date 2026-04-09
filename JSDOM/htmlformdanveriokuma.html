@@ -120,6 +120,24 @@
             }
         }
 
+        //örnek 7
+        //Id değeri "vize1" olan metin kutusunun değeri sıfırdan küçük veya 100'den büyükse "lütfen geçerli bir değer giriniz" yazan mesaj kutusu
+
+        function vizehesapla(){
+            var vize;
+            vize = Number(document.getElementById("vize1").value);
+            
+            if(vize <=0){
+                alert("Lütfen pozitif bir sayı giriniz");
+            }
+            else if(vize >=100){
+                alert("Lütfen 100'den küçük bir sayı giriniz");
+            }
+            else{
+                document.getElementById("vizesonuc").innerHTML="Notunuz="+vize;
+            }
+        }
+
     </script>
 
     <!-- örnek 1 -->
@@ -181,5 +199,16 @@
         <input type="button" value="Gönder" onclick="isim()">
        </form>
        <div id="issim"></div>
+
+       <br>
+       <br>
+
+       <!-- örnek 7 -->
+
+       <form>
+        Vize <input type="text" id="vize1">
+        <input type="button" value="gönder" onclick="vizehesapla()">
+       </form>
+       <div id="vizesonuc"></div>
 </body>
 </html>
