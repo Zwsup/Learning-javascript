@@ -6,10 +6,121 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Try Catch uygulaması -->
+    <p id="test"></p>
 
+    <br>
+    <br>
+    <br>
+
+    <!-- Formlarda Throw Uygulaması -->
+    <h2>Form ile Throw Uygulaması</h2>
+    <form>
+        Ders Notu: <input type="text" id="dersnotu"> <br>
+        <input type="button" value="Kontrol Et" onclick="kontrol()">
+    </form>
+    <p id="hatailetisi"></p>
+    <p id="girilendeger"></p>
     <script>
         //HATA YÖNETİMİ
+
+        //Javascript Hata Türleri
+
+        //Yazım (syntax) hatası: örneğin, alert() yerine ulert() yazabilirsiniz. Editörler bunları tespit eder.
+
+        //Mantıksal (logical) hata: Bilgi veya dikkat eksikliği nedeniyle (x1+x2)/2 yerine x1+x2/2 yazmak.
+
+        //Kullanıcı (User) hatası: 0-100 arası değer girmek  yerine -70 gibi bir değer girmek
+
+
+        //Javascript'te Hata Ayıklama (Debugging)
+
+        //Hata durumunda tarayıcılar herhangi bir uyarı vermiyor olsa da aslında çoğu tarayıcının içinde gömülü olarak bir hata ayıklayıcı (debugger) bulunur.
+
+        //"Geliştirici Araçları" da denilen ayıklayıcı penceresine genelde "F12" tuşuyla ulaşılır. Örneğin Chrome kullanıyorsanız "F12" tuşuna basın ve "Geliştirici Araçları / DeveloperTools" pencersinin açılmasını sağlayın.
+
+        //"Developer Tools" pencerseinde "Elements, Console, Sources" sekmelerini kullanarak ayıklama çalışmaları yapabiliriz.
+
+        //Pencereyi kapatmak için tekrar "F12" tuşunu kullanabiliriz.
+
+        //Kodlarda hatann nede olduğunu bulmak için şu sıra izlenir.
+
+        //1-> F5 ile dosya çalıştırılır.
+        //2-> F12 ile Geliştirici penceresi çalıştırılır.
+        //3-> Araç çubuğunun yanında kaç tane hata/error olduğu görünür. Hata sayısı kırmızı renkli hata ikonunun yanında görünür.
+        //4-> "Console" veya "Sources" sekmesinden hatanın hangi satır ve sütunda olduğu görünür.
+        //5-> HTML Sayfasına dönüp hatayı düzelterek kodlar tekrar çalıştırılır.
+        
+
+        //Javascript'te Hata Yönetimi
+
+        //Maalesef hatalı kod veya kodlar programcılığın doğasında vardır. Bu nedenle satın olduğumuz programları "as is" (olduğu gibi) satın almış oluyoruz.
+
+        //Javascript dilinde hataları yönetmek için "try, catch, throw ve finally" blokları kullanılır. Bu blokların görevleri şu şekildedir.
+
+        //-Try: Hata olabilecek kodlar bu bloğun içine yazılır.
+
+        //-Catch: Hatayı yakalar ve hata mesajını ekrana yazmamızı sağlar.
+
+        //-Throw: Özel hata mesajları göstermemizi sağlar.
+
+        //-Finally: Hata olsa da olmasa da çalışması istenen kodlar bu bloğa yazılır.
+
+
+        //try, catch ve finally syntaxı;
+        // try{
+        // Çalışacak kodlar;
+        // }
+
+        // catch(err){
+        //     try bloğunda hata olursa çalışacak kodlar;
+        // }
+
+        // finally{
+        //     Hata olsa da olmasada çalışması istenen kodlar;
+        // }
+
+
+
+        //Try Catch Uygulaması
+        try{
+            aaaaalert("Hata olabilir");
+        }
+        catch(err){
+            document.getElementById("test").innerHTML=err.message;
+        }
+
+
+
+
+
+
+
+        //Formlarda Throw Uygulaması
+        function kontrol(){
+            var hatailetisi,not;
+            hatailetisi = document.getElementById("hatailetisi");
+            hatailetisi.innerHTML=""
+
+            not = document.getElementById("dersnotu").value;
+
+
+            try{
+                if(not=="") throw "ders notu girilmemiş";
+                if(isNaN(not)) throw "Sayısal değer girilmemiş";
+                not = Number(not);
+                if(not <0 || not > 10) throw "ders notu 0-10 arasında olmalıdır"
+            }
+            catch(err){
+                hatailetisi.innerHTML="hata "+err;
+            }
+            finally{
+                document.getElementById("girilendeger").innerHTML="Girilen Değer="+not;
+            }
+        }
     </script>
+
+    
     
 </body>
 </html>
